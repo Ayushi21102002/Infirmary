@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Home page</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" type="text/css" href="https://fonts.google.com/">
+		<link rel="stylesheet" href="home2.css">
+	</head>
+	<body>
+		<div class="transparent-box">
+		<div class="home">
+			<div class="navbar">
+				<img src="project/logo_final.png" class="logo">
+			</div>
+
+			<!-- Side navigation -->
+			<div id="sidenav">
+	<nav>
+		<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">HOSPITALS</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">HEALTH-CARE</a></li>
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">ADD YOUR HOSPITAL</a></li>
+				<li><a href="#">FEEDBACK</a></li>
+				<li><a href="#">CONTACT-US</a></li>
+		</ul>
+	</nav>
+</div>
+
+<!--menubtn-->
+<div id="menubtn">
+	<img src="project/menu.jpg" id="menu">
+</div>
+
+<!--scrollmenu-->
+<script type="text/javascript">
+	var menubtn=document.getElementById("menubtn")
+	var sidenav=document.getElementById("sidenav")
+	var menu=document.getElementById("menu")
+
+		sidenav.style.right="-160px";
+
+	menu.onclick=function() {
+		// body...
+		if(sidenav.style.right=="-160px"){
+			sidenav.style.right="0px";
+			menu.src="project/close.jpg";
+		}else{
+			sidenav.style.right="-160px";
+			menu.src="project/menu.jpg";
+		}
+	}
+</script>
+
+			
+			<div class="content">
+				<h2> Find the hospital of your choice</h2>
+				<p>In Infirmary you can choose a good hospital of your choice and get information about it like hospital's address,phone number and Doctor's List.</p>
+				<a href="#"> <span></span> Find Out </a>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
